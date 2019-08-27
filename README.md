@@ -29,20 +29,18 @@ Start the `Application.kt` in your favourite IDE or build the JAR and launch it 
 
 ## Call the REST API
 
-A [Postman](https://www.getpostman.com/) Project with all possible requests can be found under `src/test/resources`.
+A [Postman](https://www.getpostman.com/) Project with exemplary requests can be found under `src/test/resources`.
 
-To create a new _Club_ you need to do a POST to `http://localhost:8080/clubs` with a payload like this:
+E.g. to create a new _Club_ you need to do a POST to `http://localhost:8080/clubs` with a payload like this:
 ```json
 {
-  "id": 1,
   "name": "Real Madrid",
   "founded": 1902
 }
 ```
 To GET a all _Clubs_ call http://localhost:8080/clubs`, to get a certain _Club_ by its ID call `http://localhost:8080/clubs/1`
 
-To create a _Footballer_ and associate it to the previously created _Club_ you POST this to 
-`http://localhost:8080/footballers`:
+To create a _Footballer_ and associate it to a previously created _Club_ you POST this to  `http://localhost:8080/footballers`:
 ```json
 {
   "footballer": {
