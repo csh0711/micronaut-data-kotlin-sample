@@ -1,4 +1,4 @@
-## Micronaut Data with Kotlin sample
+# Micronaut Data with Kotlin sample
 
 __Micronat Data__ (previously known as _Micronaut Predator_) is the new database access toolkit of 
 [Micronaut](https://micronaut.io/).
@@ -12,11 +12,11 @@ For further details concerning Micronaut Data please see:
 - [Documentation](https://micronaut-projects.github.io/micronaut-data/snapshot/guide/#sql)
 - [Github Project Site](https://github.com/micronaut-projects/micronaut-data)
 
-### Entity–relationship model
+## Entity–relationship model
 
 ![Entities](entities.png)
 
-### Setup
+## Setup
 Start the `Application.kt` in your favourite IDE or build the JAR and launch it via
 ```
 > ./gradlew clean shadowJar  
@@ -25,7 +25,7 @@ Start the `Application.kt` in your favourite IDE or build the JAR and launch it 
  
  The application should start on `http://localhost:8080` 
 
-### Call the REST API
+## Call the REST API
 
 A [Postman](https://www.getpostman.com/) Project with all possible requests can be found under `test/resources`.
 
@@ -56,7 +56,7 @@ To GET all _Footballers_ you have to call `http://localhost:8080/footballers`.
 
 To GET all _Footballers_ for a certain _position_ please add the request parameter `position` (e.g. `http://localhost:8080/footballers?position=Midfield`) 
 
-### Next steps
+## Next steps
 - Add Flyway support
 - Add documented Integration- and Unit-Tests
 - Add support for [GraalVM Substrate](https://www.graalvm.org/docs/reference-manual/aot-compilation/) so a Native Image may be generated (right now the H2Driver prevents this)
