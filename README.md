@@ -16,6 +16,8 @@ For further details concerning Micronaut Data please see:
 
 ![Entities](entities.png)
 
+_Note:_ The example uses an in-memory H2.
+
 ## Setup
 Start the `Application.kt` in your favourite IDE or build the JAR and launch it via
 ```
@@ -27,7 +29,7 @@ Start the `Application.kt` in your favourite IDE or build the JAR and launch it 
 
 ## Call the REST API
 
-A [Postman](https://www.getpostman.com/) Project with all possible requests can be found under `test/resources`.
+A [Postman](https://www.getpostman.com/) Project with all possible requests can be found under `src/test/resources`.
 
 To create a new _Club_ you need to do a POST to `http://localhost:8080/clubs` with a payload like this:
 ```json

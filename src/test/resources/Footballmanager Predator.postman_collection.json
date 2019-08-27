@@ -1,0 +1,437 @@
+{
+	"info": {
+		"_postman_id": "2eb6aadd-81c1-4b53-8fa8-17dd7a811f7b",
+		"name": "Footballmanager Predator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST 1st Club",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Real Madrid\",\n    \"founded\": 1902\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/clubs/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clubs",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST 1st Footballer and add to 1st Club",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"footballer\": {\n\t    \"firstName\": \"Toni\",\n\t    \"lastName\": \"Kroos\",\n\t    \"position\": \"Midfield\"\n\t},\n\t\"clubId\":1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/footballers/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"footballers",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST 2nd Club",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Bayern München\",\n    \"founded\": 1900\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/clubs/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clubs",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST 2nd  Footballer and add to 2nd Club",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"footballer\": {\n\t    \"firstName\": \"Joshua\",\n\t    \"lastName\": \"Kimmich\",\n\t    \"position\": \"Midfield\"\n\t},\n\t\"clubId\":2\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/footballers/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"footballers",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST 3rd Club",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Manchester City F.C.\",\n    \"founded\": 1880\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/clubs/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clubs",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST 3rd  Footballer and add to 3rd Club",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"footballer\": {\n\t    \"firstName\": \"Leroy\",\n    \t\"lastName\": \"Sane\",\n    \t\"position\": \"Striker\"\n\t},\n\t\"clubId\":3\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/footballers/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"footballers",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all   Footballers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/footballers/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"footballers",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET all",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/footballers/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"footballers",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 08 Mar 2019 15:35:31 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Javalin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "287"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"0\": {\n        \"firstName\": \"Mario\",\n        \"lastName\": \"Gomez\",\n        \"position\": \"Striker\"\n    },\n    \"1\": {\n        \"firstName\": \"Benjamin\",\n        \"lastName\": \"Pavard\",\n        \"position\": \"Defense\"\n    },\n    \"2\": {\n        \"firstName\": \"Santiago\",\n        \"lastName\": \"Ascacíbar\",\n        \"position\": \"Midfield\"\n    },\n    \"3\": {\n        \"firstName\": \"Ron-Robert\",\n        \"lastName\": \"Zieler\",\n        \"position\": \"Goalkeeper\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "GET all Clubs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/clubs/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clubs",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET all",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/footballers/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"footballers",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 08 Mar 2019 15:35:31 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Javalin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "287"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"0\": {\n        \"firstName\": \"Mario\",\n        \"lastName\": \"Gomez\",\n        \"position\": \"Striker\"\n    },\n    \"1\": {\n        \"firstName\": \"Benjamin\",\n        \"lastName\": \"Pavard\",\n        \"position\": \"Defense\"\n    },\n    \"2\": {\n        \"firstName\": \"Santiago\",\n        \"lastName\": \"Ascacíbar\",\n        \"position\": \"Midfield\"\n    },\n    \"3\": {\n        \"firstName\": \"Ron-Robert\",\n        \"lastName\": \"Zieler\",\n        \"position\": \"Goalkeeper\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "GET 1st  Footballer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/footballers/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"footballers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET  Footballers by position",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/footballers?position=Midfield",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"footballers"
+					],
+					"query": [
+						{
+							"key": "position",
+							"value": "Midfield"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET all",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/footballers/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"footballers",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 08 Mar 2019 15:35:31 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Javalin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "287"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"0\": {\n        \"firstName\": \"Mario\",\n        \"lastName\": \"Gomez\",\n        \"position\": \"Striker\"\n    },\n    \"1\": {\n        \"firstName\": \"Benjamin\",\n        \"lastName\": \"Pavard\",\n        \"position\": \"Defense\"\n    },\n    \"2\": {\n        \"firstName\": \"Santiago\",\n        \"lastName\": \"Ascacíbar\",\n        \"position\": \"Midfield\"\n    },\n    \"3\": {\n        \"firstName\": \"Ron-Robert\",\n        \"lastName\": \"Zieler\",\n        \"position\": \"Goalkeeper\"\n    }\n}"
+				}
+			]
+		}
+	]
+}
