@@ -38,9 +38,9 @@ E.g. to create a new _Club_ you need to do a POST to `http://localhost:8080/club
   "founded": 1902
 }
 ```
-To GET a all _Clubs_ call http://localhost:8080/clubs`, to get a certain _Club_ by its ID call `http://localhost:8080/clubs/1`
+To GET a all _Clubs_ call `http://localhost:8080/clubs`, to get a certain _Club_ by its ID call `http://localhost:8080/clubs/1`
 
-To create a _Footballer_ and associate it to a previously created _Club_ you POST this to  `http://localhost:8080/footballers`:
+To create a _Footballer_ and associate it to a previously created _Club_ POST this to  `http://localhost:8080/footballers`:
 ```json
 {
   "footballer": {
