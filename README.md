@@ -45,8 +45,8 @@ To create a _Footballer_ and associate it to a previously created _Club_ POST th
 {
   "footballer": {
     "firstName": "Toni",
-	"lastName": "Kroos",
-	"position": "Midfield"
+    "lastName": "Kroos",
+    "position": "Midfield"
   },
   "clubId":1
 }
